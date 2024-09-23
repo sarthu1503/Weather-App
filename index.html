@@ -43,7 +43,7 @@
         </div>
         <script>
             const apiKey = "736317791a84351219a81218b2cb2869";
-            const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=matric&q=";
+            const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
             const searchBox = document.querySelector(".search input")
             const searchBtn = document.querySelector(".search button")
@@ -64,19 +64,19 @@
                     document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
 
                     if (data.weather[0].main == "clouds") {
-                        weatherIcon.scr = "images/clouds.png";
+                        weatherIcon.src = "images/clouds.png";
                     }
                     else if (data.weather[0].main == "clear") {
-                        weatherIcon.scr = "images/clear.png";
+                        weatherIcon.src = "images/clear.png";
                     }
                     else if (data.weather[0].main == "rain") {
-                        weatherIcon.scr = "images/rain.png";
+                        weatherIcon.src = "images/rain.png";
                     }
                     else if (data.weather[0].main == "drizzle") {
-                        weatherIcon.scr = "images/drizzle.png";
+                        weatherIcon.src = "images/drizzle.png";
                     }
                     else if (data.weather[0].main == "mist") {
-                        weatherIcon.scr = "images/mist.png";
+                        weatherIcon.src = "images/mist.png";
                     }
 
                     document.querySelector(".weather").style.display = "block";
